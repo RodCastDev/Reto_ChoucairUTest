@@ -8,8 +8,8 @@ Feature: UTest Challenge
     Given i go to the UTest site
     And select Join Today
     When fill out the form about me
-      | name | lastName | email                  | month    | day | year |
-      | Juan | Leon     | JuaLen09Luis@gmail.com | November | 25  | 1999 |
+      | name | lastName | email      | month    | day | year |
+      | Juan | Leon     | <strEmail> | November | 25  | 1999 |
     And fill out the form about my address
       | city   | zip    | country  |
       | Bogota | 123456 | Colombia |
@@ -21,5 +21,6 @@ Feature: UTest Challenge
       | 03012Gold52# |
     Then validate the successful creation of the account with the <title>
     Examples:
-      | title                                                                   |
-      | Welcome to the world's largest community of freelance software testers! |
+      | strEmail                | title                                                                   |
+      | JuaLen023Luis@gmail.com | Welcome to the world's largest community of freelance software testers! |
+      | JuaLen054Luis@gmail.com | Welcome to the world's largest community of freelance software testers! |

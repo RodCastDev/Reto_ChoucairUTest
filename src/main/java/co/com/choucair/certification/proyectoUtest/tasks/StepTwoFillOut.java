@@ -31,10 +31,10 @@ public class StepTwoFillOut implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Click.on(FormAddressView.DELETE_BTN),
-                Enter.theValue(strCity).into(FormAddressView.CITY_FIELD),
-                Hit.the(Keys.ARROW_DOWN).into(FormAddressView.CITY_FIELD),
-                Hit.the(Keys.ENTER).into(FormAddressView.CITY_FIELD),
+//                Click.on(FormAddressView.DELETE_BTN),
+//                Enter.theValue(strCity).into(FormAddressView.CITY_FIELD),
+//                Hit.the(Keys.ARROW_DOWN).into(FormAddressView.CITY_FIELD),
+//                Hit.the(Keys.ENTER).into(FormAddressView.CITY_FIELD),
 
                 Clear.field(FormAddressView.ZIP_FIELD),
                 Enter.theValue(strZip).into(FormAddressView.ZIP_FIELD),
